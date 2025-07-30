@@ -5,6 +5,7 @@ import Youtube from "./Youtube"
 import Notes from "./Notes"
 import Google from "./Google"
 import TodoList from "./To-Do"
+import Birthday from "./Birthday"
 
 import { useState } from "react"
 
@@ -26,6 +27,8 @@ function Display(){
             return <Google/>
         case 'To-Do':
             return <TodoList/>
+        case 'Birthday':
+            return <Birthday/>
         default:
             return <div className="text-white">App Not Found</div>
     }

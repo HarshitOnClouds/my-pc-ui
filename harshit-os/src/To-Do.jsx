@@ -33,7 +33,7 @@ export default function TodoList() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && addTodo()}
-              />
+                />
               <button className="bg-green-500 hover:bg-green-600 rounded-r-xl text-white p-2 "onClick={addTodo}>Add</button>
             </div>
         </div>
@@ -44,21 +44,21 @@ export default function TodoList() {
          <ul>
           {[...todos].reverse().map((todo, index) => (
             <li
-              key={index}
-              className="flex justify-between items-center bg-gray-700 p-2 mb-2 rounded"
+            key={index}
+            className="flex justify-between items-center bg-gray-700 p-2 mb-2 rounded"
             >
               <div
                 className={` cursor-pointer w-100 min-h-10 ${
                   todo.completed ? "line-through text-gray-400" : "text-white"
                 }`}
                 onClick={() => toggleTodo(index)}
-              >
+                >
                 {todo.text}
               </div>
               <button
                 className="text-red-400 hover:text-red-600 ml-2"
                 onClick={() => deleteTodo(index)}
-              >
+                >
                 ✕
               </button>
             </li>
@@ -67,7 +67,10 @@ export default function TodoList() {
        </div>
 
         {todos.length === 0 && (
+          <div className="">
           <p className="text-gray-400 text-center">No tasks yet!</p>
+          <div className="text-white text-sm ">A To-do App, but it will be of no use for you because you aint doing ANYONE soon</div>
+          </div>
         )}
       </div>
     </div>

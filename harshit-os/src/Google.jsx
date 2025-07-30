@@ -9,7 +9,8 @@ export default function Google() {
   }, []);
 
   return (
-    <div className="w-full h-full flex justify-center p-5">
+    <div className="w-full h-full flex flex-col justify-center p-5">
+      <div className="text-3xl text-white mb-20">Go ahead, search a way to get abs and bitches, the google works trust me</div>
       <div className="gcse-search"></div>
     </div>
   );

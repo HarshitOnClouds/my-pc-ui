@@ -47,6 +47,7 @@ export default function Home(){
                         <Shortcuts src={'/icons/music.png'} name='Music' />
                         <Shortcuts src={'/icons/resume.png'} name='Resume'/>
                         <Shortcuts src={'/icons/stopwatch.png'} name='Stopwatch' />
+                        <Shortcuts src={'/icons/cake.png'} name='Birthday' />
                         </div>
                         </div>
                         <Window Open = {open} AppName = {tab} onClose={()=> setOpen(false)} />

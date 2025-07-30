@@ -29,6 +29,8 @@ export default function Calculator() {
   );
 
   return (
+    <div className="flex flex-col  justify-center items-center">
+    <div className="text-white text-3xl mb-20" >A Calculator to calculate your chances of getting some bitches</div>
     <div className="w-64 bg-slate-900 rounded shadow p-4">
       <div className="bg-neutral-800 text-white text-right px-3 py-1 mb-4 rounded h-12 flex items-center justify-end overflow-x-auto">
         {input || "0"}
@@ -57,6 +59,7 @@ export default function Calculator() {
       >
         =
       </button>
+    </div>
     </div>
   );
 }

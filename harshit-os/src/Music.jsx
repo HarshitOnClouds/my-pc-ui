@@ -36,6 +36,21 @@ const songs = [
         imgsrc: './wallpapers/wallpaper1.jpg',
         src: './songs/zarasa.mp3'
     },
+    {
+        name: 'Janiye',
+        imgsrc: './wallpapers/wallpaper1.jpg',
+        src: './songs/Janiye.mp3'
+    },
+    {
+        name: 'Woh Raat',
+        imgsrc: './wallpapers/wallpaper1.jpg',
+        src: './songs/WohRaat.mp3'
+    },
+    {
+        name: 'Timeless',
+        imgsrc: './wallpapers/wallpaper1.jpg',
+        src: './songs/timeless.mp3'
+    },
 
 ]
 
@@ -122,14 +137,14 @@ export default function Music(){
                 {songs.map((song,idx)=>(
                     <div
                     key={idx}
-                    className="w-30 h-10 bg-slate-800 mx-2 my-1 rounded-sm flex items-center hover:opacity-75 active:scale-90 transition-all cursor-pointer" 
+                    className="w-50 h-20 bg-slate-800 mx-2 my-1 rounded-sm flex items-center hover:opacity-75 active:scale-90 transition-all cursor-pointer" 
                     onClick={()=>{
                         setCurrentSong(song)
                         setIsPlaying(true)
                     }}  
                     >
                         <img className="p-1 w-[50%] " src={song.imgsrc}/>
-                        <div className="text-white text-[8px] ">{song.name}</div>
+                        <div className="text-white text-[12px] font-serif tracking-widest ">{song.name}</div>
                     </div>
                 ))}
             </div>
