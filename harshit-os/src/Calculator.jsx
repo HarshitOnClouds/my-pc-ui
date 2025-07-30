@@ -13,7 +13,9 @@ export default function Calculator() {
 
   const handleCalculate = () => {
     try {
-      setInput(String(eval(input)));
+      // Using Function constructor instead of eval for better security
+      const result = new Function('return ' + input)();
+      setInput(String(result));
     } catch (e) {
       setInput("Error");
     }

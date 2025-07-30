@@ -14,7 +14,7 @@ function LiveClock() {
   const time = dateTime.toLocaleTimeString(); 
   const date = dateTime.toLocaleDateString(); 
   return (
-    <div className="text-white text-[10px] px-2 flex flex-col justify-center items-center ">
+    <div className="text-white text-[14px] px-2 flex flex-col justify-center items-center ">
       <div>{time}</div>
       <div>{date}</div>
     </div>

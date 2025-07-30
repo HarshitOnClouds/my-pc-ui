@@ -31,7 +31,7 @@ export default function Home(){
     return(
         <div className=" h-screen" >
                 <div className="relative w-full h-full overflow-hidden ">
-                    <div className="inset-0 absolute bg-cover bg-center bg-[url('/wallpapers/wallpaper1.jpg')] "></div>
+                    <div className="inset-0 absolute bg-cover bg-center bg-[url('/wallpapers/rebelkid.webp')] "></div>
 
                     <div className="relative h-[93%] p-2 flex justify-between">
                         <div className="flex">
